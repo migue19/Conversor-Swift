@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="conversor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conversor de Temperatura  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oud-kF-bxA">
+                                <rect key="frame" x="193" y="85" width="214" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8H2-fO-Fdi">
+                                <rect key="frame" x="145" y="218" width="20" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Proporciona los grados centigrados" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BFc-WF-a3L">
+                                <rect key="frame" x="175" y="214" width="251" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grados Celcius a grados Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAE-Eb-6L2">
+                                <rect key="frame" x="164" y="134" width="273" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYu-ay-l0M">
+                                <rect key="frame" x="268" y="286" width="64" height="30"/>
+                                <state key="normal" title="Convertir"/>
+                                <connections>
+                                    <action selector="convertir:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Pb-3X-DBM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mx-k9-N6g">
+                                <rect key="frame" x="60" y="385" width="481" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="hTH-ec-bvx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8H2-fO-Fdi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="198" id="249-DU-fYc"/>
+                            <constraint firstItem="oud-kF-bxA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="65" id="7YZ-kk-7RG"/>
+                            <constraint firstItem="cYu-ay-l0M" firstAttribute="top" secondItem="BFc-WF-a3L" secondAttribute="bottom" constant="42" id="8Q4-xp-OnJ"/>
+                            <constraint firstItem="8H2-fO-Fdi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="8Rv-o6-KlI"/>
+                            <constraint firstItem="BFc-WF-a3L" firstAttribute="top" secondItem="vAE-Eb-6L2" secondAttribute="bottom" constant="59" id="DSu-wt-Ks9"/>
+                            <constraint firstItem="BFc-WF-a3L" firstAttribute="leading" secondItem="8H2-fO-Fdi" secondAttribute="trailing" constant="10" id="EXC-hD-hhi"/>
+                            <constraint firstItem="cYu-ay-l0M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L3e-8F-x0L"/>
+                            <constraint firstItem="oud-kF-bxA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PAo-EO-i2L"/>
+                            <constraint firstItem="vAE-Eb-6L2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pfc-Ha-sfb"/>
+                            <constraint firstItem="1Mx-k9-N6g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y3P-Nv-Zdn"/>
+                            <constraint firstItem="BFc-WF-a3L" firstAttribute="leading" secondItem="8H2-fO-Fdi" secondAttribute="leading" id="aT7-iI-VJG"/>
+                            <constraint firstItem="1Mx-k9-N6g" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" constant="1" id="hNN-tu-sbq"/>
+                            <constraint firstItem="1Mx-k9-N6g" firstAttribute="top" secondItem="cYu-ay-l0M" secondAttribute="bottom" constant="69" id="m7C-wf-csK"/>
+                            <constraint firstItem="BFc-WF-a3L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xeP-5o-u13"/>
+                            <constraint firstItem="vAE-Eb-6L2" firstAttribute="top" secondItem="oud-kF-bxA" secondAttribute="bottom" constant="28" id="zj2-71-212"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8Rv-o6-KlI"/>
+                                <exclude reference="aT7-iI-VJG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="gradcelcius" destination="BFc-WF-a3L" id="bMC-Jb-e8v"/>
+                        <outlet property="resultado" destination="1Mx-k9-N6g" id="K3O-Hx-FFb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.5" y="309.5"/>
+        </scene>
+    </scenes>
+</document>
